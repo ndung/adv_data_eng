@@ -12,6 +12,6 @@ Create connections:
 
 2. id: neo4j_default, type: generic, host: neo4j, login: neo4j, password: password, port: 7687, scheme: {"scheme":"bolt"}
 
-Run elt and etl in http://localhost:8080/dags
+Trigger elt and etl in http://localhost:8080/dags
 
 Open http://localhost:7474/ to query neo4j database
