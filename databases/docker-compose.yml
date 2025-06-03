@@ -1,0 +1,20 @@
+services:
+  mongo:
+    image: mongo:latest
+  cassandra:
+    image: cassandra:latest
+  redis:
+    image: redis:latest
+  neo4j:
+    image: neo4j:latest
+    environment:
+      NEO4J_AUTH: neo4j/password
+      NEO4J_PLUGINS: '["graph-data-science","apoc"]'
+  mysql:
+    image: mysql:8.4
+    ports: ["3306:3306"]
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: lab
+      MYSQL_USER: labuser
+      MYSQL_PASSWORD: labpass
